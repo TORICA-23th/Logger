@@ -54,14 +54,14 @@ void loop() {
 
   sprintf(SD_Buf, "%.2f,%.2f,%.2f\n", roll, pitch, heading );
   main_SD.add_str(SD_Buf);
-  Serial.print(SD_Buf);
+  //Serial.print(SD_Buf);
 
   digitalWrite(LEDR, LOW);
   while (millis() - time_ms < 10) {}
   time_ms = millis();
   digitalWrite(LEDR, HIGH);
-  Serial.print("time_ms = ");
-  Serial.print(time_ms);
+  //Serial.print("time_ms = ");
+  //Serial.print(time_ms);
 }
 
 void loop2() {
